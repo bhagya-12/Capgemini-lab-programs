@@ -23,6 +23,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/Ojdbc/ojdbc14.jar.zip"/>
+	<classpathentry kind="lib" path="C:/Users/bhagy/Downloads/All jars/JPA-Capgemini-jars/JPA-Capgemini-jars/ojdbc14.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
