@@ -1,36 +1,30 @@
 package com.capg.otms.user.model;
 
-    import java.util.List;
+   import java.util.List;
 
-	import javax.persistence.ElementCollection;
-	import javax.persistence.Entity;
-	import javax.persistence.Id;
-
-	@Entity
 	public class Question {
-		@Id
+
+
 		private long questionId;
-		@ElementCollection
+		
 		private List<String> questionOptions;
 		private String questionTitle;
 		private int questionAnswer;
 		private double questionMarks;
-		private int choosenAnswer;
+		private int chosenAnswer;
 		private double marksScored;
 		
-		public Question() {
-			// TODO Auto-generated constructor stub
-		}
+		public Question() { }
 
 		public Question(long questionId, List<String> questionOptions, String questionTitle, int questionAnswer,
-				double questionMarks, int choosenAnswer, double marksScored) {
+				double questionMarks, int chosenAnswer, double marksScored) {
 			super();
 			this.questionId = questionId;
 			this.questionOptions = questionOptions;
 			this.questionTitle = questionTitle;
 			this.questionAnswer = questionAnswer;
 			this.questionMarks = questionMarks;
-			this.choosenAnswer = choosenAnswer;
+			this.chosenAnswer = chosenAnswer;
 			this.marksScored = marksScored;
 		}
 
@@ -74,12 +68,12 @@ package com.capg.otms.user.model;
 			this.questionMarks = questionMarks;
 		}
 
-		public int getChoosenAnswer() {
-			return choosenAnswer;
+		public int getChosenAnswer() {
+			return chosenAnswer;
 		}
 
-		public void setChoosenAnswer(int choosenAnswer) {
-			this.choosenAnswer = choosenAnswer;
+		public void setChosenAnswer(int chosenAnswer) {
+			this.chosenAnswer = chosenAnswer;
 		}
 
 		public double getMarksScored() {
@@ -88,17 +82,5 @@ package com.capg.otms.user.model;
 
 		public void setMarksScored(double marksScored) {
 			this.marksScored = marksScored;
-		}
-
-		@Override
-		public String toString() {
-			return "Question [questionId=" + questionId + ", questionOptions=" + questionOptions + ", questionTitle="
-					+ questionTitle + ", questionAnswer=" + questionAnswer + ", questionMarks=" + questionMarks
-					+ ", choosenAnswer=" + choosenAnswer + ", marksScored=" + marksScored + "]";
-		}
-		
-		
+		}	
 	}
-
-
-
